@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Notes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/styles/main.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="assets/scripts/app.js" defer></script>
+    </head>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#"><h2>Notes</h2></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <button id="addNote" class="ml-auto btn btn-success">Add Note</button>
+        </nav>
+    </header>
+    <body>
+        <ul id="app"></ul>
+        <div class="modal" id="add-modal">
+            <div class="modal__content">
+              <label for="title">Note Title</label>
+              <input class="mb-3" type="text" name="title" id="title" />
+              <label for="image-url">Note Content</label>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            <div class="modal__actions">
+              <button id="cancelNewNote" class="btn btn--passive">Cancel</button>
+              <button id="addNewNote" class="btn btn--success">Add</button>
+            </div>
+        </div>
+    </body>
+</html>
